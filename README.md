@@ -33,6 +33,9 @@ Kumpulan jobsheet dan tugas praktikum mata kuliah Pengolahan Citra dan Visi Komp
 | Minggu 3 | Transformasi intensitas & akuisisi citra | `week3_16.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Adidtiasmara/PCVK26_16_Firman/blob/main/week3_16.ipynb) |
 | Minggu 5 | Histogram & equalization | `Week5_16.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Adidtiasmara/PCVK26_16_Firman/blob/main/Week5_16.ipynb) |
 | Minggu 6 | Spasial filter & filter modern | `Week6_16.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Adidtiasmara/PCVK26_16_Firman/blob/main/Week6_16.ipynb) |
+| Minggu 7 | Segmentasi citra dengan thresholding | `week7_16.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Adidtiasmara/PCVK26_16_Firman/blob/main/week7_16.ipynb) |
+| Minggu 9 | Morfologi (erosi, dilasi, opening, closing) | `week9_16.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Adidtiasmara/PCVK26_16_Firman/blob/main/week9_16.ipynb) |
+| Minggu 10 | Dasar-dasar deteksi objek | `week10_16.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Adidtiasmara/PCVK26_16_Firman/blob/main/week10_16.ipynb) |
 
 ---
 
@@ -64,6 +67,17 @@ Kumpulan jobsheet dan tugas praktikum mata kuliah Pengolahan Citra dan Visi Komp
 - Pemilihan ukuran kernel **sharpening** (3×3 vs 5×5)
 - **Filter kartun**: bilateral filter + adaptive threshold + `bitwise_and`
 
+### Minggu 10 — Dasar-dasar Deteksi Objek
+- **Template matching** 6 metode `cv.matchTemplate()` (SQDIFF → CCOEFF_NORMED)
+- Template matching **manual dengan NumPy** (NCC + non-maximum suppression) untuk multiple object
+- **Edge detection**: Sobel, Canny, dan Laplacian
+- **Corner detection**: Harris corner & Shi-Tomasi (`goodFeaturesToTrack`)
+- **Grid detection** dengan Hough Transform (canny → dilasi → erosi → `HoughLines` → merge garis mirip)
+- **Contour detection** dengan `findContours()` + `drawContours()`
+- **Feature matching**: Brute-Force ORB descriptor
+- **Face detection & tracking**: Haar Cascade Viola-Jones (wajah, mata, senyum, wajah kucing), blurring wajah, dan deteksi objek KTM
+- Tugas pengayaan: pengenalan karakter KTM dengan **CNN**
+
 ---
 
 ## Tools & Library
@@ -86,6 +100,10 @@ PCVK26_16_Firman/
 ├── week3_16.ipynb          # Jobsheet Minggu 3
 ├── Week5_16.ipynb          # Jobsheet Minggu 5
 ├── Week6_16.ipynb          # Jobsheet Minggu 6
+├── week7_16.ipynb          # Jobsheet Minggu 7
+├── week9_16.ipynb          # Jobsheet Minggu 9
+├── week10_16.ipynb         # Jobsheet Minggu 10
+├── output/                 # Hasil pengolahan citra
 └── README.md
 ```
 
